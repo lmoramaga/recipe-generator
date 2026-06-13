@@ -49,6 +49,10 @@ a {
   box-shadow: 0px 20px 60px rgbs(65, 50, 100, 0.08);
 }
 
+.recipe strong {
+  color: #e24990;
+}
+
 .hint {
   color: #6c757d;
   line-height: 1.5;
@@ -56,7 +60,27 @@ a {
   opacity: 0.6;
   font-size: 12px;
 }
+
+.hidden {
+  display: none;
+}
+
 footer {
   font-size: 17px;
   color: #505458;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
