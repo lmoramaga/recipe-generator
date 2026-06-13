@@ -7,29 +7,45 @@
     <title>AI Recipe Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Recipe Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Type ingredients or a dish you'd like to make..."
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-    </main>
-    <br />
+    <div class="container">
+      <header>
+        <h1>Recipe Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Type ingredients or a dish you'd like to make..."
+              autofocus
+              required
+              autocomplete="off"
+              class="form-instructions"
+            />
 
-    <footer>
-      Coded with love by
-      <a href="https://github.com/lmoramaga" target="_blank">Lina Moramaga</a>
-      and is <a href="" target="_blank">open-sourced</a> and is hosted on
-      <a href="" target="_blank">Render</a>
-    </footer>
+            <input type="submit" class="form-button" />
+          </form>
+          <div class="hint">i.e Chicken, Rice or Tomatoes</div>
+        </div>
+
+        <div class="recipe">
+          From the outside burrata may look like a ball of plain mozzarella
+          cheese
+        </div>
+      </main>
+      <br />
+
+      <footer>
+        Coded with 💜 by
+        <a href="https://github.com/lmoramaga" target="_blank">Lina Moramaga</a>
+        and is
+        <a href="https://github.com/lmoramaga/recipe-generator" target="_blank"
+          >open-sourced</a
+        >
+        and is hosted on
+        <a href="" target="_blank">Render</a>
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
