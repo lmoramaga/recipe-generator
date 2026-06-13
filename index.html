@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Recipe Generator</title>
   </head>
@@ -21,6 +23,7 @@
               required
               autocomplete="off"
               class="form-instructions"
+              id="user-instructions"
             />
 
             <input type="submit" class="form-button" />
@@ -28,10 +31,7 @@
           <div class="hint">i.e Chicken, Rice or Tomatoes</div>
         </div>
 
-        <div class="recipe">
-          From the outside burrata may look like a ball of plain mozzarella
-          cheese
-        </div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <br />
 
@@ -43,7 +43,9 @@
           >open-sourced</a
         >
         and is hosted on
-        <a href="" target="_blank">Render</a>
+        <a href="https://recipe-generator-sfyl.onrender.com/" target="_blank"
+          >Render</a
+        >
       </footer>
     </div>
 
